@@ -56,6 +56,21 @@
         "embeddedLanguages": {
           "meta.template.expression.ts": "typescript"
         }
+      },
+      {
+        "injectTo": [
+          "source.js",
+          "source.js.jsx",
+          "source.jsx",
+          "source.ts",
+          "source.tsx",
+          "source.yaml"
+        ],
+        "scopeName": "inline.yaml.js",
+        "path": "./syntaxes/inline-yaml-js.json",
+        "embeddedLanguages": {
+          "meta.template.expression.ts": "typescript"
+        }
       }
     ]
   }
