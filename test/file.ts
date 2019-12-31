@@ -7,6 +7,11 @@ first: second ${100 + 10}
 function css(..._: any) {}
 
 const s = css`
-this is: something else
+  thisis: something else;
+`
 
+const html = y
+// HTML
+const h = html`
+  first: value second: value third: value
 `

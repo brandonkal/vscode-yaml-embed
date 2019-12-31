@@ -10,34 +10,52 @@
     "Programming Languages"
   ],
   "contributes": {
-    "languages": [
-      {
-        "id": "yaml-template"
-      }
-    ],
     "grammars": [
       {
         "injectTo": [
           "source.js",
-          "source.ts",
-          "source.jsx",
           "source.js.jsx",
+          "source.jsx",
+          "source.ts",
           "source.tsx",
-          "source.vue"
+          "source.yaml"
         ],
-        "scopeName": "inline.yaml",
-        "path": "./syntaxes/yaml-embed.tmLanguage.json",
+        "scopeName": "inline.lit-html",
+        "path": "./syntaxes/lit-html.json",
         "embeddedLanguages": {
-          "meta.embedded.block.yaml": "yaml"
+          "meta.embedded.block.html": "html",
+          "meta.embedded.block.css": "css",
+          "source.css": "css"
         }
       },
       {
-        "injectTo": ["source.yaml"],
-        "scopeName": "inline.ts",
-        "language": "yaml",
-        "path": "./syntaxes/yaml-js.tmLanguage.json",
+        "injectTo": [
+          "source.js",
+          "source.js.jsx",
+          "source.jsx",
+          "source.ts",
+          "source.tsx",
+          "source.yaml"
+        ],
+        "scopeName": "inline.lit-html.string.injection",
+        "path": "./syntaxes/lit-html-string-injection.json",
         "embeddedLanguages": {
-          "meta.embedded.line.ts": "typescript"
+          "meta.template.expression.ts": "typescript"
+        }
+      },
+      {
+        "injectTo": [
+          "source.js",
+          "source.js.jsx",
+          "source.jsx",
+          "source.ts",
+          "source.tsx",
+          "text.html.basic"
+        ],
+        "scopeName": "inline.lit-html.style.injection",
+        "path": "./syntaxes/lit-html-style-injection.json",
+        "embeddedLanguages": {
+          "meta.template.expression.ts": "typescript"
         }
       }
     ]
