@@ -1,0 +1,56 @@
+{
+  "name": "y",
+  "displayName": "y",
+  "description": "Embedded YAML for JavaScript",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.41.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "source.yaml.embed",
+        "aliases": [
+          "YAML (Embedded)"
+        ],
+        "configuration": "./language-configuration.json"
+      },
+      {
+        "id": "abc",
+        "extensions": [
+          ".abc"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "source.yaml.embed",
+        "scopeName": "source.yaml.embed",
+        "path": "./syntaxes/yaml-embed.tmLanguage.json"
+      },
+      {
+        "injectTo": [
+          "source.js",
+          "source.ts",
+          "source.jsx",
+          "source.js.jsx",
+          "source.tsx",
+          "source.vue"
+        ],
+        "scopeName": "source.ts",
+        "path": "./syntaxes/yaml-embed.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embeded.line.ts": "typescript"
+        }
+      },
+      {
+        "language": "abc",
+        "scopeName": "source.abc",
+        "path": "./syntaxes/abc.tmGrammar.json"
+      }
+    ]
+  }
+}
