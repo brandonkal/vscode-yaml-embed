@@ -12,24 +12,18 @@
   "contributes": {
     "languages": [
       {
-        "id": "abc",
-        "extensions": [
-          ".abc"
+        "id": "source.css.styled",
+        "aliases": [
+          "CSS (Styled Components)"
         ],
-        "configuration": "./language-configuration.json"
-      },
-      {
-        "id": "yaml-embed",
-        "extensions": [
-          ".yaml-embed"
-        ]
+        "configuration": "./css.styled.configuration.json"
       }
     ],
     "grammars": [
       {
-        "path": "./syntaxes/abc.tmLanguage.json",
-        "scopeName": "source.abc",
-        "language": "abc"
+        "language": "source.css.styled",
+        "scopeName": "source.css.styled",
+        "path": "./syntaxes/abc.tmLanguage.json"
       },
       {
         "injectTo": [
@@ -40,13 +34,13 @@
           "source.tsx",
           "source.vue"
         ],
-        "scopeName": "abc",
-        "path": "./syntaxes/yaml-embed.json",
+        "scopeName": "styled",
+        "path": "./syntaxes/yaml-embed.tmLanguage.json",
         "embeddedLanguages": {
-          "source.abc": "abc",
+          "source.css.scss": "yaml",
           "meta.embedded.line.ts": "typescript"
         }
-    }
+      }
     ]
   }
 }
