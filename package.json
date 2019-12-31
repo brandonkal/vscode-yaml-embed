@@ -12,19 +12,10 @@
   "contributes": {
     "languages": [
       {
-        "id": "source.css.styled",
-        "aliases": [
-          "CSS (Styled Components)"
-        ],
-        "configuration": "./css.styled.configuration.json"
+        "id": "yaml-template"
       }
     ],
     "grammars": [
-      {
-        "language": "source.css.styled",
-        "scopeName": "source.css.styled",
-        "path": "./syntaxes/abc.tmLanguage.json"
-      },
       {
         "injectTo": [
           "source.js",
@@ -34,10 +25,18 @@
           "source.tsx",
           "source.vue"
         ],
-        "scopeName": "styled",
+        "scopeName": "inline.yaml",
         "path": "./syntaxes/yaml-embed.tmLanguage.json",
         "embeddedLanguages": {
-          "source.css.scss": "yaml",
+          "meta.embedded.block.yaml": "yaml"
+        }
+      },
+      {
+        "injectTo": ["source.yaml"],
+        "scopeName": "inline.ts",
+        "language": "yaml",
+        "path": "./syntaxes/yaml-js.tmLanguage.json",
+        "embeddedLanguages": {
           "meta.embedded.line.ts": "typescript"
         }
       }

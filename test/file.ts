@@ -1,5 +1,12 @@
-function y(_: any) {}
+function y(..._: any) {}
 
-const yaml = css`
+const yaml = y`
 first: second ${100 + 10}
+`
+
+function css(..._: any) {}
+
+const s = css`
+this is: something else
+
 `
