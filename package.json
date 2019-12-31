@@ -21,7 +21,7 @@
           "source.yaml"
         ],
         "scopeName": "inline.yaml",
-        "path": "./syntaxes/inline-yaml.json",
+        "path": "./grammars/inline-yaml.json",
         "embeddedLanguages": {
           "meta.embedded.block.yaml": "yaml",
           "source.yaml": "yaml"
@@ -36,38 +36,8 @@
           "source.tsx",
           "source.yaml"
         ],
-        "scopeName": "inline.yaml.string.injection",
-        "path": "./syntaxes/inline-yaml-string-injection.json",
-        "embeddedLanguages": {
-          "meta.template.expression.ts": "typescript"
-        }
-      },
-      {
-        "injectTo": [
-          "source.js",
-          "source.js.jsx",
-          "source.jsx",
-          "source.ts",
-          "source.tsx",
-          "source.yaml"
-        ],
-        "scopeName": "inline.yaml.tag.injection",
-        "path": "./syntaxes/inline-yaml-tag-injection.json",
-        "embeddedLanguages": {
-          "meta.template.expression.ts": "typescript"
-        }
-      },
-      {
-        "injectTo": [
-          "source.js",
-          "source.js.jsx",
-          "source.jsx",
-          "source.ts",
-          "source.tsx",
-          "source.yaml"
-        ],
         "scopeName": "inline.yaml.js",
-        "path": "./syntaxes/inline-yaml-js.json",
+        "path": "./grammars/inline-yaml-js.json",
         "embeddedLanguages": {
           "meta.template.expression.ts": "typescript"
         }
