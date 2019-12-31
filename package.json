@@ -12,24 +12,24 @@
   "contributes": {
     "languages": [
       {
-        "id": "source.yaml.embed",
-        "aliases": [
-          "YAML (Embedded)"
+        "id": "abc",
+        "extensions": [
+          ".abc"
         ],
         "configuration": "./language-configuration.json"
       },
       {
-        "id": "abc",
+        "id": "yaml-embed",
         "extensions": [
-          ".abc"
+          ".yaml-embed"
         ]
       }
     ],
     "grammars": [
       {
-        "language": "source.yaml.embed",
-        "scopeName": "source.yaml.embed",
-        "path": "./syntaxes/yaml-embed.tmLanguage.json"
+        "path": "./syntaxes/abc.tmLanguage.json",
+        "scopeName": "source.abc",
+        "language": "abc"
       },
       {
         "injectTo": [
@@ -40,17 +40,13 @@
           "source.tsx",
           "source.vue"
         ],
-        "scopeName": "source.ts",
-        "path": "./syntaxes/yaml-embed.tmLanguage.json",
+        "scopeName": "abc",
+        "path": "./syntaxes/yaml-embed.json",
         "embeddedLanguages": {
-          "meta.embeded.line.ts": "typescript"
+          "source.abc": "abc",
+          "meta.embedded.line.ts": "typescript"
         }
-      },
-      {
-        "language": "abc",
-        "scopeName": "source.abc",
-        "path": "./syntaxes/abc.tmGrammar.json"
-      }
+    }
     ]
   }
 }
