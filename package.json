@@ -20,8 +20,8 @@
           "source.tsx",
           "source.yaml"
         ],
-        "scopeName": "inline.lit-html",
-        "path": "./syntaxes/lit-html.json",
+        "scopeName": "inline.yaml",
+        "path": "./syntaxes/inline-yaml.json",
         "embeddedLanguages": {
           "meta.embedded.block.yaml": "yaml",
           "source.yaml": "yaml"
@@ -36,8 +36,8 @@
           "source.tsx",
           "source.yaml"
         ],
-        "scopeName": "inline.lit-html.string.injection",
-        "path": "./syntaxes/lit-html-string-injection.json",
+        "scopeName": "inline.yaml.string.injection",
+        "path": "./syntaxes/inline-yaml-string-injection.json",
         "embeddedLanguages": {
           "meta.template.expression.ts": "typescript"
         }
@@ -51,8 +51,8 @@
           "source.tsx",
           "source.yaml"
         ],
-        "scopeName": "inline.lit-html.style.injection",
-        "path": "./syntaxes/lit-html-style-injection.json",
+        "scopeName": "inline.yaml.tag.injection",
+        "path": "./syntaxes/inline-yaml-tag-injection.json",
         "embeddedLanguages": {
           "meta.template.expression.ts": "typescript"
         }

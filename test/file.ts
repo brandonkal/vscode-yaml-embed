@@ -18,4 +18,7 @@ ${1 + 2}
   first: value ${1 + 2}
   se-${1 + 2}-cond: value
   third: value
+    # comment ${1 + 2}
+    - list1 ${2 - 1}
+    - [first, ${second}]
 `
