@@ -23,9 +23,8 @@
         "scopeName": "inline.lit-html",
         "path": "./syntaxes/lit-html.json",
         "embeddedLanguages": {
-          "meta.embedded.block.html": "html",
-          "meta.embedded.block.css": "css",
-          "source.css": "css"
+          "meta.embedded.block.yaml": "yaml",
+          "source.yaml": "yaml"
         }
       },
       {
@@ -50,7 +49,7 @@
           "source.jsx",
           "source.ts",
           "source.tsx",
-          "text.html.basic"
+          "source.yaml"
         ],
         "scopeName": "inline.lit-html.style.injection",
         "path": "./syntaxes/lit-html-style-injection.json",

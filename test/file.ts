@@ -12,6 +12,10 @@ const s = css`
 
 const html = y
 // HTML
-const h = html`
-  first: value second: value third: value
+const h = y`
+${1 + 2}
+# comment
+  first: value ${1 + 2}
+  se-${1 + 2}-cond: value
+  third: value
 `

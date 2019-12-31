@@ -14,8 +14,8 @@
   "patterns": [
     {
       "name": "string.js.taggedTemplate",
-      "contentName": "meta.embedded.block.html",
-      "begin": "(?x)(\\b(?:\\w+\\.)*(?:html|raw)\\s*)(`)",
+      "contentName": "meta.embedded.block.yaml",
+      "begin": "(?x)(\\b(?:\\w+\\.)*(?:yaml|y)\\s*)(`)",
       "beginCaptures": {
         "1": {
           "name": "entity.name.function.tagged-template.js"
