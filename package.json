@@ -12,6 +12,7 @@
     "type": "git",
     "url": "https://github.com/brandonkal/vscode-yaml-embed"
   },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.41.0"
   },
