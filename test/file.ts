@@ -21,4 +21,32 @@ ${1 + 2}
     # comment ${1 + 2}
     - list1 ${2 - 1}
     - [first, ${second}]
+  ---
+  vars:
+  vlan:
+    key: "{{ item.vlan_id }}"
+    values:
+      vlan_id: "{{ item.vlan_id }}"
+      name: "{{ item.name }}"
+      enabled: "{{ item.state != 'act/lshut' }}"
+      state: "{{ item.state }}"
+`
+
+const k = y`
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp
+  labels:
+    name: myapp
+spec:
+  containers:
+  - name: myapp
+    image: <Image>
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: <Port>
 `
