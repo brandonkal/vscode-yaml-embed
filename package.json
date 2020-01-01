@@ -1,8 +1,8 @@
 {
   "name": "y",
-  "displayName": "y",
+  "displayName": "YAML for JavaScript",
   "description": "Embedded YAML for JavaScript",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.41.0"
   },
@@ -25,6 +25,9 @@
         "embeddedLanguages": {
           "meta.embedded.block.yaml": "yaml",
           "source.yaml": "yaml"
+        },
+        "tokenTypes": {
+          "meta.embedded.block.yaml": "other"
         }
       },
       {
