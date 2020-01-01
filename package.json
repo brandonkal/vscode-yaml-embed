@@ -1,8 +1,17 @@
 {
-  "name": "y",
+  "name": "yaml-embed",
   "displayName": "YAML for JavaScript",
-  "description": "Embedded YAML for JavaScript",
   "version": "0.1.0",
+  "publisher": "brandonkal",
+  "author": {
+    "name": "Brandon Kalinowski",
+    "url": "https://brandonkalinowski.com"
+  },
+  "description": "Embedded YAML for JavaScript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brandonkal/vscode-yaml-embed"
+  },
   "engines": {
     "vscode": "^1.41.0"
   },
