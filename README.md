@@ -4,7 +4,7 @@ YAML for JavaScript adds syntax highlighting support for embedded YAML in y/yaml
 
 This is very useful in combination with https://deno.land/x/lib/yaml-tag.ts for Kubernetes Configuration.
 
-![screenshot](screenshot.png)
+![screenshot](https://brandonkal/vscode-yaml-embed/raw/master/screenshot.png)
 
 ## Requirements
 
