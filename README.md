@@ -1,30 +1,13 @@
-# y README
+# vscode-yaml-embed
 
-YAML for JavaScript adds syntax highlighting support for embedded YAML in y/yaml JS tagged template strings.
+YAML for JavaScript adds syntax highlighting support for embedded YAML in y/yaml JavaScript and TypeScript tagged template strings.
 
-## One Dark Pro highlighting
+This is very useful in combination with https://deno.land/x/lib/yaml-tag.ts for Kubernetes Configuration.
 
-One Dark Pro does not correctly highlight some tokens in embedded yaml. Apply this to your global settings to resolve the issue.
-
-```json
-{
-  "editor.tokenColorCustomizations": {
-    "[One Dark Pro]": {
-      "textMateRules": [
-        {
-          "scope": [
-            "meta.embedded.block.yaml punctuation.definition.block",
-            "meta.embedded.block.yaml entity.other.document.begin.yaml",
-            "meta.embedded.block.yaml entity.other.document.end.yaml"
-          ],
-          "settings": { "foreground": "#ABB2BF" }
-        }
-      ]
-    }
-  }
-}
-```
+![screenshot](screenshot.png)
 
 ## Requirements
 
 This extension recommends `redhat.vscode-yaml` for the base YAML grammar. RedHat YAML is included with the Kubernetes extension.
+
+After installing, you will see highlighting enabled in TypeScript files. If you do not see highlighting in JavaScript files, make sure you uninstall [vscode-language-babel](https://github.com/michaelgmcd/vscode-language-babel). That extension is not compatible and is no longer required for good syntax highlighting.
